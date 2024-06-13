@@ -198,8 +198,9 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "start": "nodemon ./search/index.js",
-    "lint": "eslint ./"
+    "start:prod": "NODE_ENV=production node ./search/index.js",
+    "start:dev": "nodemon ./search/index.js",
+    "lint": "eslint ./search"
   },
   "author": "",
   "license": "ISC",
